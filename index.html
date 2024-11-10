@@ -1,0 +1,562 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع كرة القدم</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">⚽ كرة القدم مباشر</div>
+        <div class="nav-links">
+            <a href="#" class="active">الرئيسية</a>
+            <a href="#">المباريات</a>
+            <a href="#">الدوريات</a>
+            <a href="#">الأخبار</a>
+        </div>
+        <div class="auth-buttons">
+            <button class="login-btn">تسجيل الدخول</button>
+            <button class="register-btn">حساب جديد</button>
+        </div>
+    </nav>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="ابحث عن فريق أو مباراة...">
+    </div>
+
+    <div class="matches-container" id="matchesContainer">
+        <!-- سيتم إضافة المباريات هنا عبر JavaScript -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚽ كرة القدم مباشر</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-futbol"></i>
+            كرة القدم مباشر
+        </div>
+        <div class="nav-links">
+            <a href="#" class="active">الرئيسية</a>
+            <a href="#">المباريات اليوم</a>
+            <a href="#">الدوريات</a>
+            <a href="#">الإحصائيات</a>
+            <a href="#">البث المباشر</a>
+        </div>
+        <div class="auth-buttons">
+            <button class="login-btn"><i class="fas fa-sign-in-alt"></i> تسجيل الدخول</button>
+            <button class="register-btn"><i class="fas fa-user-plus"></i> حساب جديد</button>
+        </div>
+    </nav>
+
+    <div class="search-box">
+        <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="searchInput" placeholder="ابحث عن فريق، دوري، أو مباراة...">
+        </div>
+    </div>
+
+    <div class="leagues-filter">
+        <button class="league-btn active">الدوري السعودي</button>
+        <button class="league-btn">دوري أبطال آسيا</button>
+        <button class="league-btn">الدوري الإنجليزي</button>
+        <button class="league-btn">دوري أبطال أوروبا</button>
+    </div>
+
+    <div class="matches-container" id="matchesContainer">
+        <!-- سيتم إضافة المباريات هنا عبر JavaScript -->
+    </div>
+
+    <div class="live-stats" id="liveStats">
+        <!-- سيتم إضافة الإحصائيات هنا -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚽ كرة القدم مباشر</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- القائمة العلوية المتحركة -->
+    <nav class="navbar glass-effect">
+        <div class="logo">
+            <i class="fas fa-futbol bounce"></i>
+            <span class="gradient-text">كرة القدم مباشر</span>
+        </div>
+        
+        <div class="nav-links">
+            <a href="#" class="active"><i class="fas fa-home"></i> الرئيسية</a>
+            <a href="#"><i class="fas fa-tv"></i> المباريات اليوم</a>
+            <a href="#"><i class="fas fa-trophy"></i> الدوريات</a>
+            <a href="#"><i class="fas fa-chart-bar"></i> الإحصائيات</a>
+            <a href="#"><i class="fas fa-play-circle"></i> البث المباشر</a>
+        </div>
+
+        <div class="auth-buttons">
+            <button class="login-btn glow-effect">
+                <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+            </button>
+            <button class="register-btn pulse-effect">
+                <i class="fas fa-user-plus"></i> حساب جديد
+            </button>
+        </div>
+    </nav>
+
+    <!-- شريط البحث المتطور -->
+    <div class="search-box glass-effect">
+        <div class="search-container">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="ابحث عن فريق، دوري، أو مباراة...">
+            <button class="voice-search">
+                <i class="fas fa-microphone"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- فلتر الدوريات المتحرك -->
+    <div class="leagues-filter glass-effect">
+        <button class="league-btn active">
+            <img src="saudi-league.png" alt="الدوري السعودي" class="league-icon">
+            الدوري السعودي
+        </button>
+        <button class="league-btn">
+            <img src="champions-league.png" alt="دوري أبطال آسيا" class="league-icon">
+            دوري أبطال آسيا
+        </button>
+        <!-- يمكن إضافة المزيد من الدوريات -->
+    </div>
+
+    <!-- عرض المباريات -->
+    <div class="matches-container" id="matchesContainer">
+        <!-- سيتم إضافة البطاقات ديناميكياً -->
+    </div>
+</body>
+</html>
+<!-- إضافة قسم الدوريات في HTML -->
+<div class="leagues-section">
+    <h2 class="section-title">الدوريات المتاحة</h2>
+    <div class="leagues-grid">
+        <!-- الدوري السعودي -->
+        <div class="league-card">
+            <img src="https://upload.wikimedia.org/wikipedia/ar/1/1c/Saudi_Pro_League_2021.png" alt="الدوري السعودي">
+            <h3>الدوري السعودي</h3>
+            <span class="matches-count">12 مباراة اليوم</span>
+        </div>
+
+        <!-- دوري أبطال آسيا -->
+        <div class="league-card">
+            <img src="https://upload.wikimedia.org/wikipedia/ar/b/bf/AFC_Champions_League.png" alt="دوري أبطال آسيا">
+            <h3>دوري أبطال آسيا</h3>
+            <span class="matches-count">8 مباريات اليوم</span>
+        </div>
+
+        <!-- الدوري الإنجليزي -->
+        <div class="league-card">
+            <img src="https://upload.wikimedia.org/wikipedia/ar/f/f2/Premier_League_Logo.svg" alt="الدوري الإنجليزي">
+            <h3>الدوري الإنجليزي</h3>
+            <span class="matches-count">6 مباريات اليوم</span>
+        </div>
+
+        <!-- دوري أبطال أوروبا -->
+        <div class="league-card">
+            <img src="https://upload.wikimedia.org/wikipedia/ar/b/bf/UEFA_Champions_League.svg" alt="دوري أبطال أوروبا">
+            <h3>دوري أبطال أوروبا</h3>
+            <span class="matches-count">4 مباريات اليوم</span>
+        </div>
+
+        <!-- الدوري الإسباني -->
+        <div class="league-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/LaLiga.svg" alt="الدوري الإسباني">
+            <h3>الدوري الإسباني</h3>
+            <span class="matches-count">5 مباريات اليوم</span>
+        </div>
+
+        <!-- الدوري الإيطالي -->
+        <div class="league-card">
+            <img src="https://upload.wikimedia.org/wikipedia/ar/e/e1/Serie_A_logo_%282019%29.svg" alt="الدوري الإيطالي">
+            <h3>الدوري الإيطالي</h3>
+            <span class="matches-count">3 مباريات اليوم</span>
+        </div>
+    </div>
+</div>
+<!-- إضافة قسم الدوريات في HTML -->
+<div class="leagues-section glass-effect">
+    <h2 class="section-title">الدوريات المتاحة</h2>
+    <div class="leagues-grid">
+        <!-- الدوري السعودي -->
+        <div class="league-card">
+            <div class="league-logo">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF1WlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4yLWMwMDAgNzkuMWI2NWE3OWI0LCAyMDIyLzA2LzEzLTIyOjAxOjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjQuMCAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjMtMDMtMjdUMTU6NDM6NTcrMDM6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjMtMDMtMjdUMTU6NDM6NTcrMDM6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIzLTAzLTI3VDE1OjQzOjU3KzAzOjAwIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjY5ODI5ZWY5LTM4ZTAtNDZhNi05NmM0LTk2YzRhMzE3NjM4NSIgeG1wTU06RG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjY5ODI5ZWY5LTM4ZTAtNDZhNi05NmM0LTk2YzRhMzE3NjM4NSIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjY5ODI5ZWY5LTM4ZTAtNDZhNi05NmM0LTk2YzRhMzE3NjM4NSIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjY5ODI5ZWY5LTM4ZTAtNDZhNi05NmM0LTk2YzRhMzE3NjM4NSIgc3RFdnQ6d2hlbj0iMjAyMy0wMy0yN1QxNTo0Mzo1NyswMzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDI0LjAgKE1hY2ludG9zaCkiLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+" alt="الدوري السعودي">
+            </div>
+            <h3>الدوري السعودي</h3>
+            <span class="matches-count">12 مباراة اليوم</span>
+        </div>
+
+        <!-- دوري أبطال آسيا -->
+        <div class="league-card">
+            <div class="league-logo">
+                <img src="data:image/png;base64,..." alt="دوري أبطال آسيا">
+            </div>
+            <h3>دوري أبطال آسيا</h3>
+            <span class="matches-count">8 مباريات اليوم</span>
+        </div>
+
+        <!-- الدوري الإنجليزي -->
+        <div class="league-card">
+            <div class="league-logo">
+                <img src="data:image/svg+xml;base64,..." alt="الدوري الإنجليزي">
+            </div>
+            <h3>الدوري الإنجليزي</h3>
+            <span class="matches-count">6 مباريات اليوم</span>
+        </div>
+
+        <!-- دوري أبطال أوروبا -->
+        <div class="league-card">
+            <div class="league-logo">
+                <img src="data:image/svg+xml;base64,..." alt="دوري أبطال أوروبا">
+            </div>
+            <h3>دوري أبطال أوروبا</h3>
+            <span class="matches-count">4 مباريات اليوم</span>
+        </div>
+
+        <!-- الدوري الإسباني -->
+        <div class="league-card">
+            <div class="league-logo">
+                <img src="data:image/svg+xml;base64,..." alt="الدوري الإسباني">
+            </div>
+            <h3>الدوري الإسباني</h3>
+            <span class="matches-count">5 مباريات اليوم</span>
+        </div>
+
+        <!-- الدوري الإيطالي -->
+        <div class="league-card">
+            <div class="league-logo">
+                <img src="data:image/svg+xml;base64,..." alt="الدوري الإيطالي">
+            </div>
+            <h3>الدوري الإيطالي</h3>
+            <span class="matches-count">3 مباريات اليوم</span>
+        </div>
+    </div>
+</div>
+<div class="leagues-section glass-effect">
+    <h2 class="section-title">الدوريات المتاحة</h2>
+    <div class="leagues-grid">
+        <!-- الدوري السعودي -->
+        <div class="league-card">
+            <div class="league-logo">
+                <img src="https://i.imgur.com/example1.png" alt="الدوري السعودي">
+            </div>
+            <h3>الدوري السعودي</h3>
+            <span class="matches-count">12 مباراة اليوم</span>
+        </div>
+
+        <!-- باقي الدوريات بنفس الطريقة -->
+    </div>
+</div>
+<div class="leagues-section glass-effect">
+    <h2 class="section-title">الدوريات المتاحة</h2>
+    <div class="leagues-grid">
+        <!-- الدوري السعودي -->
+        <div class="league-card">
+            <div class="league-logo">
+                <img src="https://www.spl.sa/assets/images/logo.png" alt="الدوري السعودي">
+            </div>
+            <h3>الدوري السعودي</h3>
+            <span class="matches-count">12 مباراة اليوم</span>
+        </div>
+
+        <!-- دوري أبطال آسيا -->
+        <div class="league-card">
+            <div class="league-logo">
+                <img src="https://www.the-afc.com/img/acl-logo.png" alt="دوري أبطال آسيا">
+            </div>
+            <h3>دوري أبطال آسيا</h3>
+            <span class="matches-count">8 مباريات اليوم</span>
+        </div>
+
+        <!-- الدوري الإنجليزي -->
+        <div class="league-card">
+            <div class="league-logo">
+                <img src="https://www.premierleague.com/resources/prod/v6.111.2-5375/i/elements/pl-main-logo.png" alt="الدوري الإنجليزي">
+            </div>
+            <h3>الدوري الإنجليزي</h3>
+            <span class="matches-count">6 مباريات اليوم</span>
+        </div>
+
+        <!-- دوري أبطال أوروبا -->
+        <div class="league-card">
+            <div class="league-logo">
+                <img src="https://img.uefa.com/imgml/uefacom/ucl/2021/logos/logo_dark.png" alt="دوري أبطال أوروبا">
+            </div>
+            <h3>دوري أبطال أوروبا</h3>
+            <span class="matches-count">4 مباريات اليوم</span>
+        </div>
+
+        <!-- الدوري الإسباني -->
+        <div class="league-card">
+            <div class="league-logo">
+                <img src="https://assets.laliga.com/assets/logos/laliga-v/laliga-v-1200x1200.png" alt="الدوري الإسباني">
+            </div>
+            <h3>الدوري الإسباني</h3>
+            <span class="matches-count">5 مباريات اليوم</span>
+        </div>
+
+        <!-- الدوري الإيطالي -->
+        <div class="league-card">
+            <div class="league-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/en/6/6c/Serie_A_logo.png" alt="الدوري الإيطالي">
+            </div>
+            <h3>الدوري الإيطالي</h3>
+            <span class="matches-count">3 مباريات اليوم</span>
+        </div>
+    </div>
+</div>
+<div class="leagues-section glass-effect">
+    <h2 class="section-title">الدوريات المتاحة</h2>
+    <div class="leagues-grid">
+        <!-- الدوري السعودي -->
+        <div class="league-card">
+            <div class="league-logo">
+                <img src="https://ssr-logos.s3.amazonaws.com/saudi.png" alt="الدوري السعودي">
+            </div>
+            <h3>الدوري السعودي</h3>
+            <span class="matches-count">12 مباراة اليوم</span>
+        </div>
+
+        <!-- دوري أبطال آسيا -->
+        <div class="league-card">
+            <div class="league-logo">
+                <img src="https://ssr-logos.s3.amazonaws.com/afc.png" alt="دوري أبطال آسيا">
+            </div>
+            <h3>دوري أبطال آسيا</h3>
+            <span class="matches-count">8 مباريات اليوم</span>
+        </div>
+
+        <!-- الدوري الإنجليزي -->
+        <div class="league-card">
+            <div class="league-logo">
+                <img src="https://ssr-logos.s3.amazonaws.com/premier-league.png" alt="الدوري الإنجليزي">
+            </div>
+            <h3>الدوري الإنجليزي</h3>
+            <span class="matches-count">6 مباريات اليوم</span>
+        </div>
+
+        <!-- دوري أبطال أوروبا -->
+        <div class="league-card">
+            <div class="league-logo">
+                <img src="https://ssr-logos.s3.amazonaws.com/champions-league.png" alt="دوري أبطال أوروبا">
+            </div>
+            <h3>دوري أبطال أوروبا</h3>
+            <span class="matches-count">4 مباريات اليوم</span>
+        </div>
+
+        <!-- الدوري الإسباني -->
+        <div class="league-card">
+            <div class="league-logo">
+                <img src="https://assets.laliga.com/assets/logos/laliga-v/laliga-v-1200x1200.png" alt="الدوري الإسباني">
+            </div>
+            <h3>الدوري الإسباني</h3>
+            <span class="matches-count">5 مباريات اليوم</span>
+        </div>
+
+        <!-- الدوري الإيطالي -->
+        <div class="league-card">
+            <div class="league-logo">
+                <img src="https://ssr-logos.s3.amazonaws.com/serie-a.png" alt="الدوري الإيطالي">
+            </div>
+            <h3>الدوري الإيطالي</h3>
+            <span class="matches-count">3 مباريات اليوم</span>
+        </div>
+    </div>
+</div>
+<!-- index.html -->
+<div class="leagues-section glass-effect">
+    <h2 class="section-title">الدوريات المتاحة</h2>
+    <div class="leagues-grid" id="leaguesGrid">
+        <!-- سيتم إضافة البطاقات هنا عبر JavaScript -->
+    </div>
+</div>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚽ عالم كرة القدم</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- شريط التحميل المتحرك -->
+    <div class="loading-bar"></div>
+
+    <!-- القائمة العلوية -->
+    <nav class="navbar glass-effect">
+        <div class="logo">
+            <i class="fas fa-futbol animated-ball"></i>
+            <span class="gradient-text">عالم كرة القدم</span>
+        </div>
+        
+        <div class="nav-links">
+            <a href="#" class="active"><i class="fas fa-home"></i> الرئيسية</a>
+            <a href="#"><i class="fas fa-tv"></i> مباريات اليوم</a>
+            <a href="#"><i class="fas fa-trophy"></i> البطولات</a>
+            <a href="#"><i class="fas fa-chart-bar"></i> الإحصائيات</a>
+            <a href="#"><i class="fas fa-play"></i> بث مباشر</a>
+        </div>
+
+        <div class="auth-buttons">
+            <button class="login-btn neon-button">
+                <i class="fas fa-sign-in-alt"></i> دخول
+            </button>
+            <button class="register-btn gradient-button">
+                <i class="fas fa-user-plus"></i> تسجيل
+            </button>
+        </div>
+    </nav>
+
+    <!-- شريط البحث المتطور -->
+    <div class="search-container glass-effect">
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="ابحث عن فريق، دوري، أو مباراة...">
+            <button class="voice-search">
+                <i class="fas fa-microphone"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- قسم المباريات المباشرة -->
+    <div class="live-matches-section">
+        <h2 class="section-title">
+            <i class="fas fa-circle live-dot"></i>
+            المباريات المباشرة
+        </h2>
+        <div class="live-matches-slider">
+            <!-- ستضاف المباريات هنا -->
+        </div>
+    </div>
+
+    <!-- قسم الدوريات -->
+    <div class="leagues-section">
+        <h2 class="section-title">
+            <i class="fas fa-trophy"></i>
+            الدوريات العالمية
+        </h2>
+        <div class="leagues-grid" id="leaguesGrid">
+            <!-- ستضاف الدوريات هنا -->
+        </div>
+    </div>
+
+    <!-- شريط الأخبار المتحرك -->
+    <div class="news-ticker glass-effect">
+        <span class="news-label">آخر الأخبار</span>
+        <div class="news-content">
+            <!-- ستضاف الأخبار هنا -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- تحديث العنوان في head -->
+<head>
+    <title>⚽ عبدالله كرة قدم | موقع كرة القدم الأول</title>
+</head>
+
+<!-- تحديث القائمة العلوية -->
+<nav class="navbar glass-effect">
+    <div class="logo">
+        <i class="fas fa-futbol animated-ball"></i>
+        <span class="site-name">عبدالله</span>
+        <span class="site-description">كرة قدم</span>
+    </div>
+    <!-- ... باقي القائمة ... -->
+</nav>
+<!-- تحديث القائمة العلوية -->
+<nav class="navbar glass-effect">
+    <div class="logo">
+        <i class="fas fa-crown crown-icon"></i>
+        <i class="fas fa-futbol animated-ball"></i>
+        <span class="site-name">عبدالله</span>
+        <span class="site-description">كرة قدم</span>
+        <i class="fas fa-star star-icon"></i>
+    </div>
+</nav>
+
+<!-- إضافة أيقونات للأقسام -->
+<div class="sections">
+    <div class="section-item">
+        <i class="fas fa-trophy trophy-icon"></i>
+        <span>البطولات</span>
+    </div>
+    <div class="section-item">
+        <i class="fas fa-medal medal-icon"></i>
+        <span>النتائج</span>
+    </div>
+    <div class="section-item">
+        <i class="fas fa-fire flame-icon"></i>
+        <span>مباريات اليوم</span>
+    </div>
+</div>
+<!-- إضافة تذييل الموقع -->
+<footer class="footer glass-effect">
+    <div class="footer-content">
+        <!-- القسم الأول - الشعار والرسالة -->
+        <div class="footer-brand">
+            <div class="footer-logo">
+                <i class="fas fa-futbol animated-ball"></i>
+                <span class="site-name">عبدالله</span>
+                <span class="site-description">كرة قدم</span>
+            </div>
+            <p class="farewell-message">
+                <i class="fas fa-heart heart-icon"></i>
+                شكراً لكم... كان معكم عبدالله
+                <i class="fas fa-heart heart-icon"></i>
+            </p>
+            <p class="wishes">دمتم بخير</p>
+        </div>
+
+        <!-- القسم الثاني - الأيقونات الختامية -->
+        <div class="footer-decorations">
+            <i class="fas fa-star star-icon"></i>
+            <i class="fas fa-trophy trophy-icon"></i>
+            <i class="fas fa-crown crown-icon"></i>
+        </div>
+    </div>
+</footer>
+<!-- إضافة ترويسة القائد -->
+<div class="leader-header glass-effect">
+    <div class="leader-content">
+        <div class="leader-title">
+            <i class="fas fa-chess-king king-icon"></i>
+            <h1 class="gradient-text">القائد</h1>
+            <i class="fas fa-chess-king king-icon"></i>
+        </div>
+        <div class="leader-name">
+            <span class="name-text">ضياء يامن علي</span>
+            <div class="decoration-line"></div>
+        </div>
+    </div>
+</div>
